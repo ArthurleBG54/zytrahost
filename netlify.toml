@@ -1,0 +1,17 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/connexion"
+  to = "/connexion.html"
+  status = 200
+
+[[redirects]]
+  from = "/inscription" 
+  to = "/inscription.html"
+  status = 200

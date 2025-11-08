@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion Réussie - ZyraHost</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #15161d 0%, #1e1f29 100%);
+            color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .success-container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 50px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            max-width: 500px;
+        }
+        
+        .success-icon {
+            font-size: 4rem;
+            color: #57F287;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #57F287;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            color: #8e9297;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #5865F2, #4752c4);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(88, 101, 242, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <div class="success-icon">✓</div>
+        <h1>Connexion Réussie !</h1>
+        <p>Vous êtes maintenant connecté à votre compte ZyraHost. Vous allez être redirigé vers votre tableau de bord.</p>
+        <a href="index.html" class="btn">Retour à l'accueil</a>
+    </div>
+
+    <script>
+        // Redirection automatique après 3 secondes
+        setTimeout(() => {
+            window.location.href = 'index.html';
+        }, 3000);
+    </script>
+</body>
+</html>
